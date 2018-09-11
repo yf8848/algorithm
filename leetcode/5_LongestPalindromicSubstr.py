@@ -1,7 +1,9 @@
+#!/bin/python3
+
 class Solution:
     def longestPalindrome(self, s):
         res = ""
-        for i in xrange(len(s)):
+        for i in range(len(s)):
             # odd case: like "aba"
             tmp = self.helper(s, i ,i)
             if len(tmp) > len(res):
@@ -10,7 +12,7 @@ class Solution:
             tmp = self.helper(s, i, i+1)
             if len(tmp)>len(res):
                 res = tmp
-            return res
+        return res
     # get the longest palindrome, 
     # l,r are the middle indexs from inner to outer
     def helper(self, s, l , r):
@@ -22,4 +24,4 @@ class Solution:
 if __name__ == "__main__":
     s=Solution()
     a=input("test string:")
-    s.longestPalindrome(a)
+    print("anser: %s " % s.longestPalindrome(a))    
