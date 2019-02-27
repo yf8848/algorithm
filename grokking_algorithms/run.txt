@@ -1,0 +1,3 @@
+{'kone': {'ut', 'id', 'nv'}, 'ktwo': {'mt', 'wa', 'id'}, 'kthree': {'or', 'ca', 'nv'}, 'kfour': {'ut', 'nv'}, 'kfive': {'az', 'ca'}} {'mt', 'nv', 'wa', 'id', 'or', 'az', 'ut', 'ca'}
+{'mt', 'nv', 'wa', 'id', 'or', 'az', 'ut', 'ca'}
+greedy result: ['kone', 'ktwo', 'kthree', 'kfour', 'kfive'].

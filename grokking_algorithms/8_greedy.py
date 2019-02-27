@@ -6,7 +6,7 @@ def greedy(stations, states_needed):
         state_covered = set()
         best_state = None
         for state,station in stations.items():
-            cover = station & states_needed         # 未覆州台与当前电台覆盖州的交集
+            cover = station & states_needed         # 未覆州与当前电台覆盖州的交集
             if len(cover) > len(state_covered):
                 state_covered   = cover
                 best_state      = state
